@@ -1,0 +1,41 @@
+.dupe:hover {
+    background-color: black;
+    color: white;
+}
+
+.dupe:focus {
+    background-color: black;
+    color: white;
+}
+
+.layout {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.card {
+    border: 10px solid;
+    margin: auto;
+    width: 500px;
+    padding: 10px;
+    text-align: center;
+    background-color: cyan;
+}
+
+.details {
+    display: inline;
+}
+
+@media screen and (max-width: 800px) {
+    .details {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        width: 100%;
+    }
+}
